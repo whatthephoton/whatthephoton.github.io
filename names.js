@@ -34,7 +34,7 @@ $(document).ready(function(){
     var boxInput = $("textarea[name=words]").val();
     //console.log(boxInput);
     var re = /\s*[,\n\t\r;]\s*/
-    var wordList = boxInput.split(re);
+    var wordList = boxInput.trim().split(re); //trim() is equivalent to Python's strip()
     //console.log(wordList); //debugging
 
     if (wordList.length > 1) {
