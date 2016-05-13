@@ -33,8 +33,8 @@ $(document).ready(function(){
   $('#submitB').click(function(){
     var boxInput = $("textarea[name=words]").val();
     //console.log(boxInput);
-    var re = /\s*[,\n\t\r;]\s*/
-    var wordList = boxInput.trim().split(re); //trim() is equivalent to Python's strip()
+    var re = /\s*[,\n\t\r;]+\s*/ //captures multiple newlines, multiple commas, etc.
+    var wordList = boxInput.trim().split(re); //trim() is like Python's strip()
     //console.log(wordList); //debugging
 
     if (wordList.length > 1) {
