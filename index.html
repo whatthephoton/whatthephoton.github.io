@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html>
+<head>
+  <link rel='stylesheet' type='text/css' href='names.css'/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+  <script type='text/javascript' src='names.js'></script>
+  <title>Nameinator!</title>
+</head>
+<body>
+  <h1>Nameinator!</h1>
+  <div id='submit'>
+    <p> Need to pick a name for a character, a pet, a baby, yourself?
+      Let this webapp help you decide! (Can also be used for choosing between words, etc.)</p>
+    <p> Enter names here, separated by commas, semicolons, newlines, or tabs. </p>
+    <form name='textbox'>
+      <textarea id='text' name="words" cols="40" rows="5"></textarea>
+    </form>
+    <button id='submitB' class='button'>Submit</button>
+    <input type='button' class='button' onClick="location.href='index.html';" value="Clear"/>
+  </div>
+
+  <div id='restart' class='hidden'>
+    <input type="button" class='button' onClick="window.location.reload()" value="Restart" />
+  </div>
+  <div id='controls' class='hidden'>
+    <p id='instr'> Choose which of the two names below you prefer.</p>
+    <button id='buttonA' class='button'>A</button>
+    <button id='buttonB' class='button'>B</button>
+    <!--
+    <button id='both'>Both</button>
+    <button id='neither'>Neither</button> -->
+  </div>
+
+
+</html>
