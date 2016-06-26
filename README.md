@@ -1,4 +1,4 @@
-# whatthephoton.github.io
+# nameinator.tk
 
 Just a webpage hosting a simple name chooser. 
 
